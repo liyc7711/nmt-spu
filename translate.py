@@ -63,22 +63,12 @@ if __name__ == "__main__":
     '''
     print ('timestamp {} {}'.format('running',time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
 
-    dict_src = '/data/ycli/resource/wmt2017/deen/vocab/v30-bpe/vocab_en.pkl'
-    dict_trg = '/data/ycli/resource/wmt2017/deen/vocab/v30-bpe/vocab_de.pkl'
+    dict_src = 'vocab_en.pkl'
+    dict_trg = 'vocab_de.pkl'
 
-    test_model = ['/data/ycli/exp/deen/bb/train_model.iter200000.npz',
-                  '/data/ycli/exp/deen/bb/train_model.itertt152000.npz',
-                  '/data/ycli/exp/deen/bb/train_model.itertt1108000.npz']
+    test_model = ['']
 
-    test_file = [['/data/ycli/resource/wmt2017/deen/dev/newstest2014.tc.en.bpe',
-                 '/data/ycli/resource/wmt2017/deen/dev/newstest2014.tc.de',
-                 './data/news2014.out'],
-                 ['/data/ycli/resource/wmt2017/deen/dev/newstest2015.tc.en.bpe',
-                 '/data/ycli/resource/wmt2017/deen/dev/newstest2015.tc.de',
-                 './data/news2015.out'],
-                 ['/data/ycli/resource/wmt2017/deen/dev/newstest2016.tc.en.bpe',
-                 '/data/ycli/resource/wmt2017/deen/dev/newstest2016.tc.de',
-                 './data/news2016.out']]
+    test_file = ['src','ref','out']
 
     for model in test_model:
         

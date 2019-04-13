@@ -43,7 +43,7 @@ def main(job_id, params):
 
 if __name__ == '__main__':
     main(0, {
-        'model': ['/data/ycli/exp/gate-nmt/all/tmp/train_model.npz'],
+        'model': ['train_model.npz'],
         'dim_word': [620],
         'dim': [1000],
         'n-words': [30001],
